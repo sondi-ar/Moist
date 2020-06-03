@@ -1,0 +1,169 @@
+
+
+/*------------------------------------------------------------------------------------------------------------------base-styles*/
+
+html, body {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+font-family: 'EB Garamond', serif;
+	color: #fff;
+	background-color: rgb(120,20,255);
+	font-variant-ligatures: common-ligatures;
+	font-size: 5em;
+	cursor: crosshair;
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+	transition: color 1.6s ease;
+}
+
+body.canvasTransparent {
+	transition: background-color 1.6s ease, color 1.6s ease;
+}
+
+/**/
+
+.homepage-text-link {
+	opacity: 1;
+	color: inherit;
+	font-size: inherit;
+	-webkit-opacity: 1;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-color-opacity: 1;
+	-webkit-text-stroke-width: 1px;
+ 	-webkit-text-stroke-color: inherit;
+}
+
+.homepage-text-link-inner {
+	display: inline;
+	color: inherit;
+	font-size: inherit;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+ 	overflow: visible;
+}
+
+::selection {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	display: none !important;
+}
+
+.homepage-text-holder {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 50px 15px;
+}
+
+.homepage-text {
+	color: inherit;
+	font-size: 1em;
+	/* font-weight: 300; */
+	line-height: 1.2em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+.avoid-break-before {
+	break-before: avoid;
+}
+
+@media (min-width: 1024px) {
+	.homepage-text-holder {
+		width: 92%;
+		max-width: 100%;
+		padding: 40px 50px;
+	}
+	.homepage-text {
+		font-size: .1em;
+		line-height: 1.2em;
+	  -webkit-perspective: 1em; /* Safari 4-8 */
+	  -webkit-perspective-origin: top; /* Safari 4-8 */
+	  perspective: 1em;
+	  perspective-origin: top;
+	}
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+   font-family: 'EB Garamond', serif;	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+
+p {
+	font-size: 5em;
+}
+
+a, a:visited, a:hover, a:active, a:focus, a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.title-bottom {
+	top: auto;
+	left: auto;
+	bottom: 1.5vw;
+	right: -0.5vw;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+img {
+	pointer-events: none;
+}
+
+::selection {
+	background-color: transparent;
+}
+
+::-webkit-selection {
+	background-color: transparent;
+}
+
+html * {
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+.img-responsive {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+}
+
+
+/*Canvas stuff*/
+
+body .content {
+	opacity: 0;
+}
+
+body.loaded .content {
+	opacity: 1;
+}
+
+#wipeyCanvas {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	z-index: 9999;
+	transition: opacity 2.4s ease;
+}
+
+.canvasTransparent #wipeyCanvas {
+	opacity: 0;
+}
