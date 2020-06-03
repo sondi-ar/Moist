@@ -12,7 +12,7 @@ let pixelArrayLength;
 let alphaArrayLength;
 let alphaArrayMaxCumulativeOpacity;
 
-let color1 = '255,0,0';
+let color1 = '0,0,0';
 let color2 = '120,20,255';
 
 window.addEventListener('DOMContentLoaded',function(){
