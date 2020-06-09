@@ -14,8 +14,11 @@
 
 <body>
 
-  <audio src="media/Dissecting table.mp3" controls></audio>
-
+  <audio id="myAudio">
+    <source src="media/Dissecting table.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="playAudio()" type="button">Audio On</button>
+  <button onclick="pauseAudio()" type="button">Off</button>
 
 	<div class="header">
   <h1>Moist <a>☟</a></h1>
@@ -150,10 +153,19 @@
 	<div class="image_32" data-aos="fade-up" data-aos-duration="2000">
 		<img src="media/octa.png"/>
 	</div>
-
-
-
 </section>
+<script>
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+</script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  <script>
