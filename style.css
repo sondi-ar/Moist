@@ -44,6 +44,12 @@ animation: glow 1s ease-in-out infinite alternate;
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+
+}
 
 .header a {
 	color: black;
